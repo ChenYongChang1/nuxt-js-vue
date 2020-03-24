@@ -1,3 +1,4 @@
+import env from '.env'
 export default {
   mode: 'universal',
   /*
@@ -44,11 +45,18 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
   ],
+  server: env[process.env.MODE].server,
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    baseURL: env[process.env.MODE].api.host + env[process.env.MODE].api.port,
+    // withCredentials: true,
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  },
   /*
    ** Build configuration
    */
