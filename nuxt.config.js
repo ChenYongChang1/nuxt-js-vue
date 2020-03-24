@@ -1,4 +1,5 @@
-import env from '.env'
+import env from './.env.js'
+
 export default {
   mode: 'universal',
   /*
@@ -66,6 +67,7 @@ export default {
      */
     extend(config, ctx) {}
   },
+
   router: {
     linkPrefetchedClass: 'nuxt-link-prefetched',
     linkExactActiveClass: 'exact-active-link',
