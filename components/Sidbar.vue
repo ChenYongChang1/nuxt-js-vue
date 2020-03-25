@@ -26,6 +26,12 @@
         <div class="edit-statistics">
           <div>昵称： 快乐的美羊羊</div>
           <div>园龄： 8个月</div>
+          <div>访问： 100人</div>
+          <div>最近上传： 2020-03-25</div>
+        </div>
+        <div class="calendar">
+          <a-calendar :fullscreen="false" />
+          <!-- @panelChange="onPanelChange" -->
         </div>
       </div>
     </div>
@@ -108,14 +114,26 @@ export default {
         margin: 0 10px;
         // margin-bottom: 0;
       }
+
       .edit-statistics {
         width: calc(100% - 20px);
         // margin-top: 10px;
-        margin:0 10px;
+        margin: 0 10px;
         padding: 10px;
         box-sizing: border-box;
         background: white;
         border-radius: 10px;
+      }
+      .calendar {
+        width: 200px;
+        margin-top: 10px;
+      }
+      .calendar /deep/ .ant-fullcalendar-header {
+        display: none;
+        background: red;
+      }
+      .calendar /deep/ .ant-fullcalendar-calendar-body {
+        padding: 8px;
       }
     }
   }
