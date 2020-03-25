@@ -1,14 +1,14 @@
 <template>
   <header class="header-box">
     header
-    <div class="search-input">
+    <!-- <div class="search-input">
       <input type="text" v-model="searchValue" /> 
       <div class="search-select">
         <div v-for="(item,index) in listsInput" :key="index">
           <span  v-hightlight="{item: item.name, temp: searchValue, style:'color:#F96600'}">{{item.name}}</span>
         </div>
       </div>
-    </div>
+    </div> -->
   </header>
 </template>
 
