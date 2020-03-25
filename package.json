@@ -8,7 +8,7 @@
     "dev": "cross-env MODE=dev nuxt",
     "build": "cross-env MODE=prod nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "cross-env MODE=generate nuxt generate",
     "test": "jest"
   },
   "dependencies": {
