@@ -15,7 +15,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-0",
     "ant-design-vue": "^1.1.10",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.16.3",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.0"
   },
